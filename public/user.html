@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <script type="module" src="./assets/js/user.js"></script>
+        <link rel="stylesheet" href="./assets/css/user.css">
+        <title>Money | Manager</title>
+    </head>
+    <body class="container">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-item">
+                <span class="icon">
+                    <i class="fas fa-2x fa-plus"></i>
+                </span>
+                </div>
+        <div class="navbar-brand">
+            <div class="navbar-item has-text-dark is-size-3">
+            <h2 class="is-size-2"><b>Money Manager</b></h2>          
+            </div>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end">
+            <div class="navbar-item">
+                <div id="settings-menu" class="dropdown is-right">
+                <div class="dropdown-trigger">
+                    <figure class="image is-48x48">
+                    <img id="profile-picture" class="is-rounded profile-picture" src="https://bulma.io/images/placeholders/48x48.png">
+                    </figure>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+                    <div class="dropdown-content">
+                    <div class="dropdown-item">
+                        <p id="user-name">
+                        Username
+                        </p>
+                    </div>
+                    <hr class="dropdown-divider">
+                    <div class="dropdown-item">
+                        <p id="user-email">
+                        User email
+                        </p>
+                    </div>
+                    <hr class="dropdown-divider">
+                    <a id="logout" class="dropdown-item">
+                        Logout
+                    </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </nav>
+        <section class="section">
+            <div class="container">
+                <div class = "Expenses">
+                    <h4 class="is-size-4 has-text-centered has-text-dark">
+                        <b>Expenses</b>
+                    </h4>
+                </div>
+                <br>
+                <div class="field is-horizantal">
+                    <div class="columns">
+                        <div class="column is-3">
+                          <h4 class="is-size-4 has-text-centered has-text-success">
+                            <span class="icon">
+                                <i class="fas fa-2x fa-home"></i>
+                            </span>
+                            <br>
+                            <b>HouseHold Expenses</b>
+                          </h4>
+                          <div id="household-list">
+                                     
+                          </div>
+                        </div>
+                        <div class="column is-3">
+                          <h4 class="is-size-4 has-text-centered has-text-sucess">
+                            <span class="icon is-small">
+                                <i class="fas fa-2x fa-business-time"></i>
+                            </span>
+                            <br>
+                            <b> Business Expenses</b>
+                          </h4>
+                          <div id="business-list"></div>
+                        </div>
+                        <div class="column is-3">
+                          <h4 class="is-size-4 has-text-centered has-text-success">
+                            <span class="icon">
+                                <i class="fas fa-2x fa-motorcycle"></i>
+                            </span>
+                            <br>
+                            <b>Transport Expenses</b>
+                          </h4>
+                          <div id="transport-list"></div>
+                        </div>
+                        <div class="column is-3">
+                            <h4 class="is-size-4 has-text-centered has-text-success">
+                                <span class="icon">
+                                    <i class="fas fa-2x fa-plus"></i>
+                                </span>
+                                <br>
+                                <b>Personal Expenses</b>
+                            </h4>
+                            <div id="personal-list"></div>
+                          </div>
+                </div>
+            </div>
+          </section>
+        <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+        <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+        <script defer src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+        <script defer src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+        <script defer src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+    </body>
+</html>
